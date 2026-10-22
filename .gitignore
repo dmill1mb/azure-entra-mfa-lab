@@ -1,0 +1,18 @@
+# Raw evidence stays out of Git. Crop screenshots first, then add them deliberately.
+raw-screenshots/
+exports/
+*.csv
+*.har
+
+# Never commit secrets or state
+.env
+*.tfvars
+!terraform.tfvars.example
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfplan
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
